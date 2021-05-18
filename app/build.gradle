@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+  api project(':libs:MobileSync') // From node_modules
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        targetSdkVersion 29
+        minSdkVersion 23
+    }
+  
+  buildTypes {
+      debug {
+         testCoverageEnabled = true
+      }
+   }
+
+  sourceSets {
+
+    main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src']
+      resources.srcDirs = ['src']
+      aidl.srcDirs = ['src']
+      renderscript.srcDirs = ['src']
+      res.srcDirs = ['res']
+      assets.srcDirs = ['assets']
+    }
+  }
+  packagingOptions {
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/NOTICE'
+  }
+}

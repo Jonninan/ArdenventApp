@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">com.rmpav.android.login</string>
+	<string name="app_name"><b>RMPArdenvent</b></string>
+	<string name="app_package">com.rmpav.android</string>
+    <string name="welcome">Welcome %s</string>
+	<string name="logout_button">Logout</string>
+	<string name="fetch_contacts_button">Fetch Contacts</string>
+	<string name="fetch_equipments_button">Fetch Items</string>
+	<string name="clear_button">Clear</string>
+	<string name="scan">Scan</string>
+</resources>

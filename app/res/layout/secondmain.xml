@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:stretchColumns="1"
+	android:orientation="vertical"
+	android:background="?android:colorBackground"
+	android:id="@+id/root" >
+
+	<include layout="@layout/header" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?android:colorBackground"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp">
+
+		<!--Button
+			android:id="@+id/fetch_contacts"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:onClick="onFetchContactsClick"
+			android:text="@string/fetch_contacts_button"
+			android:background="@drawable/sf__passcode_primary_color_button"
+			android:textColor="?attr/sfColorSecondary"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:layout_marginEnd="10dp"/-->
+
+		<Button android:id="@+id/fetch_equipments"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:onClick="onFetchEquipmentsClick"
+			android:text="@string/fetch_equipments_button"
+			android:background="@drawable/sf__passcode_primary_color_button"
+			android:textColor="?attr/sfColorSecondary"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:layout_marginEnd="10dp" />
+
+		<Button
+			android:id="@+id/clear"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="@drawable/sf__passcode_secondary_color_button"
+			android:onClick="onClearClick"
+			android:text="@string/clear_button"
+			android:textColor="?attr/sfNegativeButtonTextColor"
+			android:layout_marginEnd="10dp"/>
+
+		<Button
+			android:id="@+id/scanBtn"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:layout_gravity="center"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:background="@drawable/sf__passcode_primary_color_button"
+			android:onClick="onClick"
+			android:text="@string/scan"
+			android:textColor="?attr/sfColorSecondary" />
+
+	</LinearLayout>
+
+		<ListView android:id="@+id/contacts_list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="?android:colorBackground"
+			android:textColor="?android:textColor"/>
+
+</LinearLayout>
